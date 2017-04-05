@@ -1,0 +1,336 @@
+.header{
+    width: 100%;
+    height: 636px;
+    position: relative;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+}
+.slide1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/banner1.jpg) center top  no-repeat;
+}
+
+.slide2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    background: url(../images/banner2.jpg) center top  no-repeat;
+}
+.focusList{
+    list-style: none;
+    position: absolute;
+    z-index: 88;
+    right: 20px;
+    bottom: 20px;
+}
+.focusList li{
+    width: 18px;
+    height: 18px;
+    border: 2px solid black;
+    background: #fff;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.focusList li.selected{
+    background: red;
+}
+.nav{
+    width: 100%;
+    height: 83px;
+    position: fixed;
+    z-index: 111;
+    background: rgba(0,0,0,0.1);
+}
+.header .navWhite{
+    background-color: #ffffff;
+}
+.navWhite .navCon ul li a{
+    color: #000000;
+}
+.navWhite .navCon ul li a:hover{
+    color: #fd4f00;
+}
+.navCon{
+    width: 100%;
+    overflow: hidden;
+}
+@media all and (min-width: 1001px) {
+    .navCon{
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+.navCon h1{
+    float: left;
+    width: 34%;
+    margin-top: 22px;
+}
+
+.navCon h1 a{
+    display: block;
+    width: 100%;
+    height: 66px;
+    background: url(../images/logo-active-2x.png) no-repeat;
+    background-size: 100%;
+}
+.navCon ul{
+    float: right;
+    width: 66%;
+    line-height: 83px;
+}
+.navCon ul li{
+    float: left;
+    padding: 0 25px;
+    font-size: 16px;
+}
+.navCon ul li a{
+    display: block;
+    color: #fff;
+    position: relative;
+}
+
+.channel ul{
+    text-align: center;
+}
+.channel ul li{
+    display: inline-block;
+    margin: 0 25px;
+}
+.channel ul li a{
+    display: block;
+}
+.channel ul li a span{
+    display: block;
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.home{
+    width: 100%;
+    height: 751px;
+    position: relative;
+}
+.home ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.home ul li{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.home ul li.cur{
+    display: block;
+}
+.home ul li img{
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    z-index: 3;
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    bottom: 75px;
+    text-align: center;
+}
+.icon a{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin: 0 16px;
+    box-shadow: 0 0 0 0 rgba(0,205,153,1);
+}
+.icon a.cur{
+    background: #00cc99;
+    color: #fff;
+}
+.icon a:hover{
+    background: #00cc99;
+    color: #fff;
+    box-shadow: 0 0 0 30px transparent;
+    -webkit-transition: box-shadow 1s ;
+    -moz-transition: box-shadow 1s ;
+    -ms-transition: box-shadow 1s ;
+    -o-transition: box-shadow 1s ;
+    transition: box-shadow 1s ;
+}
+.service ul{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+.service ul li{
+    display: inline-block;
+    width: 263px;
+    border-right: 1px solid #fff;
+    vertical-align: top;
+}
+.service ul li h3{
+    font-size: 20px;
+    padding:10px 0;
+    font-weight: normal;
+}
+.service ul li p{
+    text-align: left;
+    line-height: 22px;
+    font-size: 12px;
+}
+section .hd{
+    color: #666;
+    font-style: normal;
+    position: static;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 50px;
+    width: auto;
+}
+section .desc{
+
+    position: static;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: auto;
+    padding: 0 20px;
+}
+@media all and (max-width: 1000px) {
+    .header{
+        height: 465px;
+    }
+    .navCon{
+        padding: 0 30px;
+    }
+    .navCon ul li{
+        padding: 0 5px;
+    }
+    .navCon h1 a {
+        height: 44px;
+        background-size: 362px 100%;
+    }
+    .banner div{
+        background-size:1399px 465px;
+    }
+    .channel ul li{
+       max-width: 16%;
+    }
+    .channel ul li  a img{
+        max-width: 100px;
+    }
+    .channel ul li.pic1 a  img{
+        max-width: 80px;
+    }
+
+    .channel ul li.pic2 a  img,.channel ul li.pic3 a  img{
+        max-width: 50px;
+    }
+    .service ul li{
+        width: 30%;
+    }
+    .service ul li img{
+        width: 100%;
+    }
+    .service ul li h3{
+        font-size: 16px;
+    }
+    .home{
+        height: 465px;
+        background-size:1399px 465px;
+    }
+    .home ul {
+        position: absolute;
+        width: 100%;
+        height: 69%;
+    }
+
+
+}
+@media all and (max-width: 602px) {
+    .navCon ul li{
+        padding: 0 6px;
+    }
+
+}
+
+@media all and (max-width: 480px) {
+    .header{
+        height: 300px;
+    }
+    .nav{
+        height: 50px;
+    }
+    .navCon ul{
+        float: none;
+        display: none;
+    }
+    .navCon ul li{
+        float: none;
+        padding: 0 0 0 20px;
+        line-height: 40px;
+        color: #fff;
+    }
+    .navCon h1{
+        float: none;
+        margin: 0 0 0 20px;
+    }
+    .navCon h1 a{
+        height: 48px;
+        background-size:272px 100%;
+    }
+    .banner div{
+        background-size:902px 300px;
+    }
+    .channel ul li{
+        width: 35%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .service ul li{
+        width:90%;
+        margin: 0 5%;
+    }
+    .service ul li img{
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin:10px 10px 0 0 ;
+    }
+    .service ul li h3{
+        text-align: left;
+    }
+    .home{
+        height: 300px;
+        background-size:902px 300px;
+    }
+    .icon{
+        bottom: 3px;
+    }
+    .home a{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+    }
+}
+
+
+
