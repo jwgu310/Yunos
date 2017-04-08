@@ -18,7 +18,12 @@ $(window).resize(function () {
     }else {
         $('.navCon ul').css('display','block');
     }
+});
 
+// 下拉菜单
+$('.navCon .iconImg').click(function () {
+    //$('.navCon ul').toggleClass('block');
+    $('.navCon ul').slideToggle("slow");
 });
 
 // 选项卡

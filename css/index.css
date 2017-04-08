@@ -49,15 +49,7 @@
     z-index: 111;
     background: rgba(0,0,0,0.1);
 }
-.header .navWhite{
-    background-color: #ffffff;
-}
-.navWhite .navCon ul li a{
-    color: #000000;
-}
-.navWhite .navCon ul li a:hover{
-    color: #fd4f00;
-}
+
 .navCon{
     width: 100%;
     overflow: hidden;
@@ -115,11 +107,21 @@
     font-size: 16px;
 }
 .home{
+    margin-top: 40px;
     width: 100%;
     height: 751px;
     position: relative;
 }
+.home h3{
+    position: absolute;
+    z-index: 10;
+}
+.home p{
+    position: absolute;
+    z-index: 10;
+}
 .home ul{
+    z-index: -1;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -259,14 +261,19 @@ section .desc{
     .home ul {
         position: absolute;
         width: 100%;
-        height: 69%;
     }
 
 
 }
-@media all and (max-width: 602px) {
-    .navCon ul li{
-        padding: 0 6px;
+@media all and (min-width: 500px) {
+    .header .navWhite{
+        background-color: #ffffff;
+    }
+    .navWhite .navCon ul li a{
+        color: #000000;
+    }
+    .navWhite .navCon ul li a:hover{
+        color: #fd4f00;
     }
 
 }
@@ -279,8 +286,12 @@ section .desc{
         height: 50px;
     }
     .navCon ul{
+        margin-left: -30px;
+        width: 100%;
         float: none;
         display: none;
+        background-color: #fd4f00;
+
     }
     .navCon ul li{
         float: none;
@@ -290,7 +301,10 @@ section .desc{
     }
     .navCon h1{
         float: none;
-        margin: 0 0 0 20px;
+        margin-top: 2px;
+    }
+    .navCon h1 {
+        width: 64%;
     }
     .navCon h1 a{
         height: 48px;
@@ -330,7 +344,18 @@ section .desc{
         line-height: 50px;
         font-size: 14px;
     }
+    .iconImg{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: 10px;
+        background: url('../images/i-options.png') no-repeat;
+        background-size: 50px;
+        z-index: 3;
+    }
 }
+
 
 
 
